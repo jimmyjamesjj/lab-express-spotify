@@ -1,0 +1,11 @@
+{{#each albums}}
+      {{#if album.images.[0]}}
+      <img src="{{album.images.[0].url}}" alt="" class="artist-img">
+      {{else}}
+      <img src=" " alt="" class="artist-img">
+      {{/if}}
+
+        <p>{{album.name}}</p>
+        <a href="/tracks/{{album.id}}">View Tracks</a>
+    </div>
+    {{/each}}
